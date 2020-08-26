@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet">
+    <title>HOME</title>
+   
+</head>
+<body>
+    <header>
+        <div class="head">
+            <center><h2>" SAFETY ISN'T EXPENSIVE ,IT IS PRICELESS"</h2></center>
+        </div>
+    </header>
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><img src="Capture.png" height="100" width="130" /></li>
+            <li><a href="HTMLPage1.html">HOME</a></li>
+            <div class="downward">
+                <button class="dropbtn">OUR PRODUCTS</button>
+                <div class="dropdown-content">
+                    <a href="#Medkit">MED KIT</a>
+                    <a href="#Masks">FACE MASK</a>
+                    <a href="#Handsan">Hand Sanitizer</a>
+                    <a href="#glove">Gloves</a>
+                </div>
+            </div>
+            <li><a href="#signin" class="topnav-right">SIGN IN</a></li>
+            <li><a href="#signup" class="topnav-right">SIGN UP</a></li>
+            <li><a href="#freecu" class="topnav-right">FREE CHECK UP</a></li>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+        </ul>
+    </nav><br /><br /><br /><br />
+    
+                            <div class="image" id="cmn">
+                                <div class="fade">
+                                    <img name="" src="pic3.jpg" style="height: 350px;
+width: 600px;" id="cmn">
+                                </div>
+                                <div class="fade">
+                                    <img name="imgm" src="pic2.png" style="height: 350px;
+width: 600px;" id="cmn">
+                                </div>
+                                <div class="fade">
+                                    <img name="imgm" src="pic.jpg" style="height: 350px;
+width: 600px;" id="cmn">
+                                </div>
+                                <div class="fade">
+                                    <img name="imgm" src="pic4.jpg" style="height: 350px;
+width: 600px;" id="cmn">
+                                </div>
+                            </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div>
+        <footer class="foot">
+            <div class="row">
+                <div class="col-3 inmobile">
+                    <h2>Our Motto</h2>
+                    <ul>
+                        <li>Corona free India</li>
+                        <li>Healthy India</li>
+                        <li>Safe India</li>
+                    </ul>
+                </div>
+                <div class="col-3 inmobiloe">
+                    <h2>Top Active States</h2>
+                    <ul>
+                        <li>Maharashtra</li>
+                        <li>Tamil Nadu</li>
+                        <li>Delhi</li>
+                    </ul>
+                </div>
+                <div class="col-3 inmobile">
+                    <h2>Our Team</h2>
+                    <ul>
+                        <li>Shreyash Vardhan</li>
+                        <li>Kumar Abhijeet</li>
+                        <li>Mohit Gupta</li>
+                    </ul>
+                </div>
+                <div class="col-3 inmobile">
+                    <h2>Helpline Number</h2>
+                    <ul>
+                        <li>760-111-2342</li>
+                        <li>777-756-0025</li>
+                        <li>884-002-4311</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function dropdownmenu() {
+            var x = document.getElementById("dropdownclick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+        var slideIndex = 0;
+        imageSlider();
+        function imageSlider() {
+            var i;
+            var slide = document.getElementsByClassName("fade");
+            for (i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slide.length) {
+                slideIndex = 1;
+            }
+            slide[slideIndex - 1].style.display = "block";
+            setTimeout(imageSlider, 3000);
+        }
+    </script>
+</body>
+</html>
